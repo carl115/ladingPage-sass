@@ -516,20 +516,49 @@ footer {
 /*-/-*/
 
 /* RESPONSIVE */
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     /* NAVIGATION */
     .nav {
-        .circleDesing:nth-child(2) {
-            left: 23%;
+        background: rgba(6, 104, 113, .6);
+        width: 35%;
+        min-height: 100vh;
+        backdrop-filter: blur(10px);
+        border-radius: 0;
+        flex-direction: column;
+        top: 0;
+        right: -300px;
+        transition: all 1s;
+    
+        a {
+            height: 60px;
+            border: none;
         }
     
-        .circleDesing:nth-child(4) {
-            left: 48.3%;
+        .circleDesing {
+            display: none;
         }
-    
-        .circleDesing:nth-child(6) {
-            right: 23%;
+
+        .buttonCancel {
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+
+            ion-icon {
+                font-size: 40px;
+            }
         }
+    }
+
+    .nav.active {
+        right: 0;
+    }
+    /*-/-*/
+
+    /* BOTTON NAVIGATION */
+    .buttonNav {
+        display: block;
     }
     /*-/-*/
 
@@ -610,70 +639,48 @@ footer {
         }
     }
     /*-/-*/
-}
-
-@media (max-width: 850px) {
-    .nav {
-        background: rgba(6, 104, 113, .6);
-        width: 35%;
-        min-height: 100vh;
-        backdrop-filter: blur(10px);
-        border-radius: 0;
-        flex-direction: column;
-        top: 0;
-        right: -300px;
-        transition: all 1s;
-    
-        a {
-            height: 60px;
-            border: none;
-        }
-    
-        .circleDesing {
-            display: none;
-        }
-
-        .buttonCancel {
-            padding: 5px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-
-            ion-icon {
-                font-size: 40px;
-            }
-        }
-    }
-
-    .nav.active {
-        right: 0;
-    }
-    /*-/-*/
-
-    /* BOTTON NAVIGATION */
-    .buttonNav {
-        display: block;
-    }
-    /*-/-*/
 
     /* FOOTER */
     footer {
-        .description {
-            margin: 0 auto;
-        }
+        height: auto;
 
         .links {
-            margin: 0 auto;
-
-            ul {
-                li {
-                    margin-top: 13px;
-                    margin-left: 30px;
-                }
-            }
+            padding-left: 130px;
         }
     }
     /*-/-*/
+}
+
+@media (max-width: 425px) {
+    body {
+        align-items: baseline;
+
+        .buttonNav {
+            right: 36%;
+        }
+    
+        .inicio {
+    
+            .contenido {
+                padding: 0;
+    
+                .text {
+                    h3 {
+                        margin-left: 35%;
+                    }
+    
+                    ul {
+                        margin-left: 40%;
+                    }
+                }
+            }
+        }
+
+        footer {
+            .links {
+                display: none;
+            }
+        }
+    }
 }
 /*-/-*/
