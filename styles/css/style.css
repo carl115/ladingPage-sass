@@ -523,23 +523,137 @@ footer .copy {
   /*-/-*/
 }
 @media (max-width: 425px) {
-  body {
-    align-items: baseline;
+  .nav {
+    width: 50%;
   }
-  body .buttonNav {
-    right: 36%;
+
+  .inicio, .services, .aboutUs, .moreInfo {
+    width: 100%;
   }
-  body .inicio .contenido {
-    padding: 0;
+
+  .inicio {
+    margin-top: 20px;
   }
-  body .inicio .contenido .text h3 {
+  .inicio .contenido {
+    padding: 0 10px;
+  }
+  .inicio .contenido img {
+    height: 250px;
+  }
+  .inicio .contenido .text h3 {
+    margin-left: 25%;
+  }
+  .inicio .contenido .text ul {
     margin-left: 35%;
   }
-  body .inicio .contenido .text ul {
-    margin-left: 40%;
+
+  .services {
+    height: 780px;
   }
-  body footer .links {
+  .services .contenido {
+    padding: 0 10px;
+  }
+  .services .contenido img {
+    height: 210px;
+    margin: 10px;
+  }
+
+  .aboutUs .contenido {
+    padding: 0 10px;
+  }
+  .aboutUs .contenido .slide {
     display: none;
+  }
+
+  .moreInfo .contenido {
+    padding: 0 10px;
+  }
+  .moreInfo .contenido .description {
+    padding: 0 25px;
+  }
+  .moreInfo .contenido .circlePage:nth-child(4) {
+    left: -15%;
+  }
+
+  footer {
+    display: block;
+  }
+  footer .links {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .inicio .contenido {
+    padding: 0 10px;
+  }
+  .inicio .contenido img {
+    height: 230px;
+  }
+  .inicio .contenido .text h3 {
+    margin-left: 20%;
+  }
+  .inicio .contenido .text ul {
+    margin-left: 30%;
+  }
+
+  .services .contenido {
+    padding: 0 10px;
+  }
+  .services .contenido img {
+    height: 190px;
+    margin: 10px;
+  }
+
+  .moreInfo .contenido .description {
+    padding: 0 15px;
+  }
+  .moreInfo .contenido .circlePage:nth-child(4) {
+    left: -18%;
+  }
+
+  footer {
+    margin-top: 140px;
+  }
+  footer .description {
+    padding: 40px 30px 0 30px;
+  }
+}
+@media (max-width: 320px) {
+  .inicio .contenido {
+    padding: 0 5px;
+  }
+  .inicio .contenido img {
+    height: 200px;
+  }
+  .inicio .contenido .text h3 {
+    margin-left: 13%;
+  }
+  .inicio .contenido .text ul {
+    margin-left: 25%;
+  }
+
+  .services .contenido {
+    padding: 0 5px;
+  }
+  .services .contenido img {
+    height: 160px;
+  }
+
+  .aboutUs .contenido {
+    padding: 0 5px;
+  }
+  .aboutUs .contenido img {
+    height: 200px;
+  }
+
+  .moreInfo .contenido img {
+    height: 180px;
+  }
+  .moreInfo .contenido .description {
+    padding: 0;
+  }
+  .moreInfo .contenido .circlePage:nth-child(4) {
+    left: -21.5%;
   }
 }
 /*-/-*/
